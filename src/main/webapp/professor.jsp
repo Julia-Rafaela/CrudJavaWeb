@@ -74,7 +74,7 @@
 	<br/>
 	<div align="center">
 	<c:if test="${not empty professores }">
-	<table class="table_round">
+	<table border="1">
 	      <thead>
 	          <tr>
 	              <th>Codigo</th>
@@ -86,8 +86,8 @@
 	      <c:forEach var="p" items="${professores }">
 	      <tr>
 	          <td><c:out value="${p.codigo}" /></td>
-	          <td><c:out value= "${p.nome}" /></td>
-	          <td><c:out value= "${p.titulacao}" /></td>
+	          <td><c:out value="${p.nome}" /></td>
+	          <td><c:out value="${p.titulacao}" /></td>
 	      </tr>
 	      </c:forEach>
 	      </tbody>
